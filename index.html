@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Borders, tables and styles</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <!-- Create a webpage in the following format:
+    
+    1.Display a table with 5 column headings  (ex: th)
+    
+    Add the table data for 10 rows (ex: td)
+    
+    2.Give stylings:
+    border thickness, border style, border color,
+    border radius. Allign the text into center.
+    
+    Try the below css property:
+    tr:nth-child(even/odd) {
+      background-color: ********
+    }
+    
+    3. Display h1-h6 headings, 3 paragraphs, give different background color, border styles to each heading and paragraph. -->
+<body>
+    <header>
+        <h1>Premier league table 2021/2022</h1>
+    </header>
+    <main>
+        <div class="table">
+            <table>
+                <colgroup>
+                    <col span="3" style="background-color:red">
+                    <col style="background-color:yellow">
+                </colgroup>            
+                <tr id="toprow">
+                    <th></th>
+                    <th></th>
+                    <th class="team">Team</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>GD</th>
+                    <th>P</th>
+                    <th>Last five</th>
+                </tr>
+                <tr>
+               <tr>
+                    <td class="cl">1</td>
+                    <td class="logo"><img src="img/logos/mau.png" alt="manchester united logo"></td>
+                    <td class="team">Manchester Untied</td>
+                    <td>12</td>
+                    <td>9</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>30</td>
+                    <td>4</td>
+                    <td>26</td>
+                    <td>29</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win"> 
+                        <img src="img/draw.png" alt="a gray circle indicating a draw"> 
+                        <img src="img/win.png" alt="green circle indicating a win"> 
+                        <img src="img/win.png" alt="green circle indicating a win"> 
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cl">2</td>
+                    <td class="logo"><img src="img/logos/mac.png" alt="manchester city logo"></td>
+                    <td class="team">Manchester City</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>25</td>
+                    <td>6</td>
+                    <td>19</td>
+                    <td>26</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cl">3</td>
+                    <td class="logo"><img src="img/logos/liv.png" alt="liverpool logo"></td>
+                    <td class="team">Liverpool</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>35</td>
+                    <td>11</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cl">4</td>
+                    <td class="logo"><img src="img/logos/wha.png" alt="west ham logo"></td>
+                    <td class="team">West Ham</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>23</td>
+                    <td>14</td>
+                    <td>9</td>
+                    <td>23</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="el">5</td>
+                    <td class="logo"><img src="img/logos/ars.png" alt="arsenal logo"></td>
+                    <td class="team">Arsenal</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>13</td>
+                    <td>17</td>
+                    <td>-4</td>
+                    <td>20</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="logo"><img src="img/logos/wol.png" alt="wolverhampton logo"></td>
+                    <td class="team">Wolverhampton</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>19</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="logo"><img src="img/logos/tot.png" alt="tottenham logo"></td>
+                    <td class="team">Tottenham</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>17</td>
+                    <td>-6</td>
+                    <td>19</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="logo"><img src="img/logos/che.png" alt="chelsea logo"></td>
+                    <td class="team">Chelsea</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>-1</td>
+                    <td>17</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="logo"><img src="img/logos/bri.png" alt="brighton logo"></td>
+                    <td class="team">Brighton</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>-2</td>
+                    <td>17</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="logo"><img src="img/logos/cpa.png" alt="crystal palace logo"></td>
+                    <td class="team">Crystal Palace</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>18</td>
+                    <td>17</td>
+                    <td>1</td>
+                    <td>16</td>
+                    <td>
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="logo"><img src="img/logos/eve.png" alt="everton logo"></td>
+                    <td class="team">Everton</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>19</td>
+                    <td>-3</td>
+                    <td>15</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="logo"><img src="img/logos/lei.png" alt="leicester logo"></td>
+                    <td class="team">Leicester City</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>21</td>
+                    <td>-5</td>
+                    <td>15</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="logo"><img src="img/logos/sou.png" alt="southampton logo"></td>
+                    <td class="team">Southampton</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>11</td>
+                    <td>14</td>
+                    <td>-3</td>
+                    <td>14</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="logo"><img src="img/logos/bre.png" alt="brentford logo"></td>
+                    <td class="team">Brentford</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>-1</td>
+                    <td>13</td>
+                    <td>
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="logo"><img src="img/logos/avi.png" alt="aston villa logo"></td>
+                    <td class="team">Aston Villa</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>16</td>
+                    <td>20</td>
+                    <td>-4</td>
+                    <td>13</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="logo"><img src="img/logos/wat.png" alt="watford logo"></td>
+                    <td class="team">Watford</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>16</td>
+                    <td>20</td>
+                    <td>-4</td>
+                    <td>13</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="logo"><img src="img/logos/lee.png" alt="leeds logo"></td>
+                    <td class="team">Leeds</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>-8</td>
+                    <td>11</td>
+                    <td>
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="championship">18</td>
+                    <td class="logo"><img src="img/logos/bur.png" alt="burnley logo"></td>
+                    <td class="team">Burnley</td>
+                    <td>12</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>14</td>
+                    <td>20</td>
+                    <td>-6</td>
+                    <td>9</td>
+                    <td>
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="championship">19</td>
+                    <td class="logo"><img src="img/logos/nor.png" alt="norwich logo"></td>
+                    <td class="team">Norwich</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>27</td>
+                    <td>-20</td>
+                    <td>8</td>
+                    <td>
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/win.png" alt="green circle indicating a win">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="championship">20</td>
+                    <td class="logo"><img src="img/logos/new.png" alt="newcastle logo"></td>
+                    <td class="team">Nexcastle</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>27</td>
+                    <td>-12</td>
+                    <td>6</td>
+                    <td>
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                        <img src="img/draw.png" alt="a gray circle indicating a draw">
+                        <img src="img/loss.png" alt="red circle indicating a loss">
+                    </td>
+                </tr>            
+            </table>
+        </div> <!--Closing table div-->
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <p><a href="h1-h6-3xp.html">Go to the h1-h6-px3</a></p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
